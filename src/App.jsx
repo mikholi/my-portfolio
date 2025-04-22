@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import myPhoto from "./assets/my_photo.jpg"; // Fixed import
 
 const App = () => {
   return (
@@ -20,14 +21,21 @@ const App = () => {
         <p>Welcome to my portfolio!</p>
       </section>
 
-      {/* About Me Section */}
-      <section id="about" className="section">
-        <h2>About Me</h2>
-        <p>
-          I am currently a student in the Oulu University of Applied Sciences, stydying
-          Bachelor of Business Administration, Business Information Technology.
-        </p>
-      </section>
+      <section id="about" className="section about-section">
+        <div className="about-container">
+          <div className="about-text">
+            <h2>About Me</h2>
+      <p>
+        I'm currently learning web development, focusing on React, JavaScript, HTML, and CSS.
+        Passionate about building clean, user-friendly websites.
+      </p>
+        </div>
+          <div className="about-image">
+            <img src={myPhoto} alt="My portrait" className="profile-pic" />
+        </div>
+      </div>
+    </section>
+
 
       {/* Socials Section */}
       <section id="socials" className="section">
