@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -19,6 +19,8 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
+
+
 
 .navbar ul {
   list-style: none;
@@ -51,7 +53,7 @@ body {
   width: 100%;
 }
 
-/* Centering all content */
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -74,12 +76,10 @@ body {
   width: 90%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  
 }
 
-.section:hover {
-  transform: translateY(-5px);
-}
+
 
 .highlight {
   color: #006A71;
@@ -97,7 +97,7 @@ body {
   color: #666;
 }
 
-/* About Section */
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -142,6 +142,8 @@ body {
   margin-top: 1rem;
 }
 
+
+
 .social-icons a {
   color: #333;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -151,6 +153,56 @@ body {
   transform: scale(1.2);
   color: #006A71;
 }
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure the modal is on top */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.btn-show-more {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-show-more:hover {
+  background-color: #45a049;
+}
+
+.btn-close-modal {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-close-modal:hover {
+  background-color: #e53935;
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
