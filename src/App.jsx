@@ -32,7 +32,7 @@ const App = () => {
       <div className="content-container">
         {/* Home Section */}
         <section id="home" className="section fade-section">
-          <h1><span className="highlight">Hi, I'm Mikko Keränen!</span></h1>
+          <h1><span className="highlight">Hello, I'm Mikko Keränen!</span></h1>
           <p>My studies in Oulu University of Applied Sciences began in autumn 2023. In the first year we learned basics of Python, SQL,  HTML and CSS. 
             HTML was familiar to me from before, I did my first website when I was 12 years old, or something like that. First year was quite tough, there were many
             new things to learn which I never had heard of before. We also had our first project, which was quite interesting.
