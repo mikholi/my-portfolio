@@ -11,7 +11,6 @@ body {
   color: #333;
 }
 
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -19,8 +18,6 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
-
-
 
 .navbar ul {
   list-style: none;
@@ -34,7 +31,7 @@ body {
 .navbar a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
 }
 
@@ -53,7 +50,6 @@ body {
   width: 100%;
 }
 
-
 .content-container {
   display: flex;
   flex-direction: column;
@@ -61,7 +57,6 @@ body {
   padding-top: 100px;
 }
 
-/* Section Styling */
 .section {
   display: flex;
   flex-direction: column;
@@ -76,10 +71,7 @@ body {
   width: 90%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  
 }
-
-
 
 .highlight {
   color: #006A71;
@@ -96,7 +88,6 @@ body {
   font-size: 1.2rem;
   color: #666;
 }
-
 
 .about-section {
   display: flex;
@@ -158,7 +149,6 @@ body {
   border-radius: 1rem;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -166,8 +156,6 @@ body {
   font-size: 2rem;
   margin-top: 1rem;
 }
-
-
 
 .social-icons a {
   color: #333;
@@ -179,7 +167,6 @@ body {
   color: #006A71;
 }
 
-/* Modal Styles */
 .modal {
   position: fixed;
   top: 0;
@@ -189,17 +176,50 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000; /* Ensure the modal is on top */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .modal-content {
   background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  width: 700px;
   max-width: 90%;
+  max-height: 80vh; /* limit height */
+  overflow-y: auto;  /* scroll content inside if too tall */
   text-align: center;
+  position: relative;
+  text-align: center;
+  animation: fadeInUp 0.5s ease;
+}
+
+.modal-section {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.card-entry {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card-entry:hover {
+  transform: translateY(-2px);
+}
+
+.card-date {
+  min-width: 90px;
+  font-weight: 600;
+  color: #006A71;
+  font-size: 0.95rem;
 }
 
 .btn-show-more {
@@ -222,14 +242,13 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .btn-close-modal:hover {
   background-color: #e53935;
 }
 
-
-/* Animations */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -241,7 +260,6 @@ body {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -256,9 +274,6 @@ body {
     width: 200px;
     height: 200px;
   }
-
-
-
 }
 
 @media (max-width: 600px) {

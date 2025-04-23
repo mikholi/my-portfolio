@@ -20,9 +20,9 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#socials">Socials</a></li>
+          <li><a href="#home"><b>HOME</b></a></li>
+          <li><a href="#about"><b>ABOUT ME</b></a></li>
+          <li><a href="#socials"><b>SOCIALS</b></a></li>
         </ul>
       </nav>
 
@@ -86,17 +86,55 @@ const App = () => {
       </div>
 
       {/* Modal for Additional Information */}
+      {/* Modal */}
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <h3>Work History & Education</h3>
-            <p>
-              <b>EDUCATION</b>
-              <ul>
-                <li>2007-2010 Vocational Qualification in Business, <b>Raahen Porvari- ja Kauppakoulu</b></li>
-                <li>2020-2021, Basic Vocational Qualification in Logistics, Stock Clerk, <b>OSAO Kempele</b></li>
-              </ul>
-            </p>
+
+            <div className="modal-section">
+              <h4><b>🎓 Education</b></h4>
+              <div className="card-entry">
+                <div className="card-date">2007–2010</div>
+                <div>
+                  <b>Vocational Qualification in Business</b><br />
+                  Raahen Porvari- ja Kauppakoulu
+                </div>
+              </div>
+              <div className="card-entry">
+                <div className="card-date">2020–2021</div>
+                <div>
+                  <b>Logistics, Stock Clerk</b><br />
+                  OSAO Kempele
+                </div>
+              </div>
+            </div>
+
+            <div className="modal-section">
+              <h4><b>💼 Work History</b></h4>
+              <div className="card-entry">
+                <div className="card-date">2008–2021</div>
+                <div>
+                  <b>Salesperson</b><br />
+                  Osuuskauppa Arina
+                </div>
+              </div>
+              <div className="card-entry">
+                <div className="card-date">2021–2023</div>
+                <div>
+                  <b>Warehouse Worker</b><br />
+                  Valio
+                </div>
+              </div>
+              <div className="card-entry">
+                <div className="card-date">2024-2024</div>
+                <div>
+                  <b>Warehouse Worker (seasonal)</b><br />
+                  Valio
+                </div>
+              </div>
+            </div>
+
             <button onClick={closeModal} className="btn-close-modal">Close</button>
           </div>
         </div>
