@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import myPhoto from "./assets/my_photo.jpg";
 import coding from "./assets/coding.jpg";
 
+
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -14,6 +15,7 @@ const App = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  
 
   return (
     <div>
@@ -139,6 +141,7 @@ const App = () => {
           </div>
         </div>
       )}
+      
     </div>
   );
 };
