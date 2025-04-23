@@ -53,9 +53,10 @@ const App = () => {
               <h2>Where I am now?</h2>
               <p>
                 Right now we are nearing the end of the second year. So far this year has been lots of work. Fun too. 
-                We've studied React and React Native which were both new to me and they have been very interesting. This year I have learned alot 
+                We've studied React and React Native which were both new to me and they have been very interesting. I know the basics
+                from both of them, but still need a lot of practise to fully understand the code. This year I have learned alot 
                 about working in the team and using version control in Github between other members. I already 
-                planned making my own projects with both of them when I have time. Now the school takes most of my time. Hopefully at the
+                planned making my own projects with both of them when I have time. Now the school takes most of my time. Hopefully in the
                 summer I have some spare time even though  I have a summer job.
               </p>
               <h2>Where I am going?</h2>
