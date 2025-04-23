@@ -32,26 +32,34 @@ const App = () => {
       <div className="content-container">
         {/* Home Section */}
         <section id="home" className="section fade-section">
-          <h1><span className="highlight">Hi, I'm Mikko Keränen.</span></h1>
-          <p>Current student at the Oulu University of Applied Sciences.</p>
+          <h1><span className="highlight">Hi, I'm Mikko Keränen!</span></h1>
+          <p>My studies in Oulu University of Applied Sciences began in autumn 2023. In the first year we learned basics of Python, SQL,  HTML and CSS. 
+            HTML was familiar to me from before, I did my first website when I was 12 years old, or something like that. First year was quite tough, there were many
+            new things to learn which I never had heard of before. We also had our first project, which was quite interesting.
+            But in the end, I learned a lot and I am looked forward to this year.
+
+          </p>
         </section>
 
         {/* About Me Section */}
         <section id="about" className="section about-section fade-section">
           <div className="about-container">
             <div className="about-text">
-              <h2>About Me</h2>
+              <h2>Where I am now?</h2>
               <p>
-                Right now I'm studying my second year of Information Technology. I am very interested in 
-                web development and programming. Before the school I had little experience in HTML and CSS. I made 
-                my first website when I was 12 years old. I remember reading <b>"HTML for Dummies"</b> and learned making 
-                websites with it. 
+                Right now we are nearing the end of the second year. So far this year has been lots of work. Fun too. 
+                We've studied React and React Native which were both new to me and they have been very interesting. I already 
+                planned making my own projects with both of them when I have time. Now the school takes most of my time. Hopefully at the
+                summer I have some spare time even though  I have a summer job.
+              </p>
+              <h2>Where I am going?</h2>
+              <p>
+                Right now I am still  thinking about the future, what I might to do after I graduate. I'm still think that web design and development
+                is something what I would love to do most. Still I have to keep my mind open for other options too. I'm looking forward for next year,
+                when we will have more projects and internships. I hope that I will find a job that I will like.
               </p>
               <button onClick={openModal} className="btn-show-more">Education and workhistory</button>
-              <p>
-                Right now I'm very interested programming with React and React Native. I wish that someday I could get
-                a job as a web developer. I look forward to next year, when we have internships. 
-              </p>
+              
             </div>
             <div className="about-image">
               <img src={myPhoto} alt="My portrait" className="profile-pic" />
