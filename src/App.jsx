@@ -37,7 +37,7 @@ const App = () => {
                 My studies in Oulu University of Applied Sciences began in autumn 2023. In the first year we learned basics of Python, SQL, HTML and CSS. 
                 HTML was familiar to me from before, I did my first website when I was 12 years old, or something like that. First year was quite tough, there were many
                 new things to learn which I never had heard of before. We also had our first project, which was quite interesting.
-                But in the end, I learned a lot and I am looked forward to this year.
+                But in the end, I learned a lot from the first year and it felt the right choice to change worklife to studylife.
               </p>
             </div>
             <div className="home-image">
@@ -90,7 +90,11 @@ const App = () => {
           <div className="modal-content">
             <h3>Work History & Education</h3>
             <p>
-              Here will come all my work and education.
+              <b>EDUCATION</b>
+              <ul>
+                <li>2007-2010 Vocational Qualification in Business, <b>Raahen Porvari- ja Kauppakoulu</b></li>
+                <li>2020-2021, Basic Vocational Qualification in Logistics, Stock Clerk, <b>OSAO Kempele</b></li>
+              </ul>
             </p>
             <button onClick={closeModal} className="btn-close-modal">Close</button>
           </div>
