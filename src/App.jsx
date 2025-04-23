@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import myPhoto from "./assets/my_photo.jpg"; // Ensure the image is in src/assets/
+import myPhoto from "./assets/my_photo.jpg";
+import coding from "./assets/coding.jpg";
 
 const App = () => {
-  // State for controlling modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to open the modal
   const openModal = () => {
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -32,13 +30,20 @@ const App = () => {
       <div className="content-container">
         {/* Home Section */}
         <section id="home" className="section fade-section">
-          <h1><span className="highlight">Hello, I'm Mikko Keränen!</span></h1>
-          <p>My studies in Oulu University of Applied Sciences began in autumn 2023. In the first year we learned basics of Python, SQL,  HTML and CSS. 
-            HTML was familiar to me from before, I did my first website when I was 12 years old, or something like that. First year was quite tough, there were many
-            new things to learn which I never had heard of before. We also had our first project, which was quite interesting.
-            But in the end, I learned a lot and I am looked forward to this year.
-
-          </p>
+          <div className="home-container">
+            <div className="home-text">
+              <h1><span className="highlight">Hello, I'm Mikko Keränen!</span></h1>
+              <p>
+                My studies in Oulu University of Applied Sciences began in autumn 2023. In the first year we learned basics of Python, SQL, HTML and CSS. 
+                HTML was familiar to me from before, I did my first website when I was 12 years old, or something like that. First year was quite tough, there were many
+                new things to learn which I never had heard of before. We also had our first project, which was quite interesting.
+                But in the end, I learned a lot and I am looked forward to this year.
+              </p>
+            </div>
+            <div className="home-image">
+              <img src={coding} alt="Coding" className="coding-pic" />
+            </div>
+          </div>
         </section>
 
         {/* About Me Section */}
@@ -48,7 +53,8 @@ const App = () => {
               <h2>Where I am now?</h2>
               <p>
                 Right now we are nearing the end of the second year. So far this year has been lots of work. Fun too. 
-                We've studied React and React Native which were both new to me and they have been very interesting. I already 
+                We've studied React and React Native which were both new to me and they have been very interesting. This year I have learned alot 
+                about working in the team and using version control in Github between other members. I already 
                 planned making my own projects with both of them when I have time. Now the school takes most of my time. Hopefully at the
                 summer I have some spare time even though  I have a summer job.
               </p>
@@ -59,7 +65,6 @@ const App = () => {
                 when we will have more projects and internships. I hope that I will find a job that I will like.
               </p>
               <button onClick={openModal} className="btn-show-more">Education and workhistory</button>
-              
             </div>
             <div className="about-image">
               <img src={myPhoto} alt="My portrait" className="profile-pic" />
