@@ -5,7 +5,7 @@ import myPhoto from "./assets/my_photo.jpg";
 import coding from "./assets/coding.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProjectsCarousel from "./assets/components/ProjectCarousel";
+
 
 
 
@@ -84,12 +84,7 @@ const App = () => {
         </section>
 
         {/* Projects Section */}
-      <div>
-      
-      <ProjectsCarousel />
-    
-    </div>
-    </div>   
+        </div>
         
 
       
@@ -149,7 +144,13 @@ const App = () => {
                   Valio
                 </div>
               </div>
-              
+              <div className="card-entry">
+                <div className="card-date">2025-2025</div>
+                <div>
+                  <b>Warehouse Worker (seasonal)</b><br />
+                  Valio
+                </div>
+              </div>
             </div>
             
             
