@@ -3,6 +3,11 @@ import "./style.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import myPhoto from "./assets/my_photo.jpg";
 import coding from "./assets/coding.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ProjectsCarousel from "./assets/components/ProjectCarousel";
+
+
 
 
 const App = () => {
@@ -15,6 +20,9 @@ const App = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+
+  
   
 
   return (
@@ -24,7 +32,7 @@ const App = () => {
         <ul>
           <li><a href="#home"><b>HOME</b></a></li>
           <li><a href="#about"><b>ABOUT ME</b></a></li>
-          <li><a href="#socials"><b>SOCIALS</b></a></li>
+          <li><a href="#projects"><b>PROJECTS</b></a></li>
         </ul>
       </nav>
 
@@ -52,7 +60,7 @@ const App = () => {
         <section id="about" className="section about-section fade-section">
           <div className="about-container">
             <div className="about-text">
-              <h2>Where I am now?</h2>
+              <h2><span className="highlight">Where I am now?</span></h2>
               <p>
                 Right now we are nearing the end of the second year. So far this year has been lots of work. Fun too. 
                 We've studied React and React Native which were both new to me and they have been very interesting. I know the basics
@@ -61,7 +69,7 @@ const App = () => {
                 planned making my own projects with both of them when I have time. Now the school takes most of my time. Hopefully in the
                 summer I have some spare time even though  I have a summer job.
               </p>
-              <h2>Where I am going?</h2>
+              <h2><span className="highlight">Where I am going?</span></h2>
               <p>
                 Right now I am still  thinking about the future, what I might to do after I graduate. I'm still think that web design and development
                 is something what I would love to do most. Still I have to keep my mind open for other options too. I'm looking forward for next year,
@@ -75,17 +83,16 @@ const App = () => {
           </div>
         </section>
 
-        {/* Socials Section */}
-        <section id="socials" className="section fade-section">
-          <h2>My Socials</h2>
-          <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://www.linkedin.com/in/mikko-ker%C3%A4nen-3a05952aa/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://github.com/mikholi" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          </div>
-        </section>
-      </div>
+        {/* Projects Section */}
+      <div>
+      
+      <ProjectsCarousel />
+    
+    </div>
+    </div>   
+        
+
+      
 
       {/* Modal for Additional Information */}
       {/* Modal */}
@@ -135,15 +142,35 @@ const App = () => {
                   Valio
                 </div>
               </div>
+              <div className="card-entry">
+                <div className="card-date">2025-2025</div>
+                <div>
+                  <b>Warehouse Worker (seasonal)</b><br />
+                  Valio
+                </div>
+              </div>
+              
             </div>
+            
+            
 
             <button onClick={closeModal} className="btn-close-modal">Close</button>
           </div>
         </div>
       )}
+
+      <footer className="footer">
+        <div className="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.linkedin.com/in/mikko-ker%C3%A4nen-3a05952aa/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://github.com/mikholi" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        </div>
+      </footer>
       
     </div>
   );
 };
 
 export default App;
+
